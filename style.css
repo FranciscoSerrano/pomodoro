@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ec5c5c;
+  color: whitesmoke;
+}
+h1 {
+  font-size: 42px;
+  text-align: center
+}
+
+a {
+  color: #663232;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(255, 255, 255);
+  height: 90vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow-y: auto;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 80px;
+}
+
+.todo-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.todo-item {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 22px;
+}
+
+.done span {
+  text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.tick {
+  width: 30px;
+  height: 30px;
+  border: 3px solid #333;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick::before {
+  content: '✓';
+  font-size: 20px;
+  display: none;
+}
+
+.done .tick::before {
+  display: inline;
+}
+
+.delete-todo {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.delete-todo svg {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 3px solid rgb(117, 58, 58);
+  font-size: medium;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+}
+
+.timer-body {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(122, 59, 59);
+  border-radius: 5%;
+  box-shadow: 0 4px rgb(110, 39, 39);
+  height: 300px;
+  width: 400px;
+}
+
+.timer-screen {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 180, 180);
+  height: 40%;
+  width: 90%;
+  border-radius: 10px;
+  box-shadow: 0 3px#dbacac;
+}
+
+#timer {
+  color: rgb(128, 95, 95);
+  font-size: 4em;
+  font-family: 'JetBrains Mono', monospace;
+}
+#different{
+  text-align: center;
+}
+#time-buttons-container, #controls-container {
+  padding-top: 15px;
+}
+
+.minute-button, 
+.reset-button, 
+.start-button {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: rgb(160, 121, 121);
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 2px #946c6c;
+}
+
+.minute-button:hover, 
+.reset-button:hover {
+  background-color: #8d8d8d
+}
+
+.minute-button:active, 
+.reset-button:active,
+.start-button:active {
+  background-color: #ece68d;
+  box-shadow: 0 2px #666;
+  transform: translateY(4px);
+}
+
+.start-button{
+  background-color: #d85c5c;
+  box-shadow: 0 2px #8a2121;
+}

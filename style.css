@@ -32,7 +32,6 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   color: rgb(255, 255, 255);
-  height: 90vh;
   margin-top: 5vh;
   margin-bottom: 5vh;
   overflow-y: auto;
@@ -227,4 +226,9 @@ input[type="text"] {
 .start-button{
   background-color: #d85c5c;
   box-shadow: 0 2px #8a2121;
+}
+
+#love {
+  text-align: center;
+  font-size: smaller;
 }

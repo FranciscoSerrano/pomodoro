@@ -56,6 +56,7 @@ function reset() {
   timer.innerHTML = '00:00:00'
   pageTitle.innerHTML = "Pomodoro"
   clearInterval(interval);
+  isRunning = false;
 }
 function start() {
   if(counter === timeLeft) {
